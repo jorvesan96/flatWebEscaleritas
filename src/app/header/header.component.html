@@ -1,0 +1,16 @@
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/rooms">Rooms</a></li>
+      <li><a routerLink="/pictures">Pictures</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+    <div class="language-selector">
+      <label for="language">Language:</label>
+      <select id="language" (change)="changeLanguage($event)">
+        <option *ngFor="let language of languages" [value]="language">{{ language }}</option>
+      </select>
+    </div>
+  </nav>
+</header>
