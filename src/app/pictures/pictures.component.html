@@ -1,5 +1,13 @@
+<!-- src/app/pictures/pictures.component.html -->
 <div>
   <h1>Pictures Page</h1>
   <p>Here are some pictures.</p>
-  <!-- Aquí puedes agregar el contenido específico para la página de fotos -->
+  <div *ngIf="imageUrls.length > 0">
+    <div *ngFor="let url of imageUrls">
+      <img [src]="url" alt="Picture" style="width: 100%; max-width: 600px; margin-bottom: 10px;">
+    </div>
+  </div>
+  <div *ngIf="imageUrls.length === 0">
+    <p>No images available.</p>
+  </div>
 </div>

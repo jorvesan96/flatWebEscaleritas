@@ -8,6 +8,7 @@ import { RoomsComponent } from './rooms/rooms.component';
 import { ContactComponent } from './contact/contact.component';
 import { PicturesComponent } from './pictures/pictures.component';
 import { HomeComponent } from './home/home.component';
+import { FirebaseModule } from './services/firebase.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FirebaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
