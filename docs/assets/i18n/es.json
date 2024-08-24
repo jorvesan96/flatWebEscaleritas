@@ -1,0 +1,40 @@
+{
+  "HOME": {
+    "TITLE": "Inicio",
+    "DESCRIPTION": "¡Bienvenido a la página de inicio!"
+  },
+  "ROOMS": {
+    "TITLE": "Habitaciones",
+    "DESCRIPTION": "Información sobre las habitaciones."
+  },
+  "PICTURES": {
+    "TITLE": "Imágenes",
+    "DESCRIPTION": "Imágenes de la casa."
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "DESCRIPTION": "Información de contacto."
+  },
+  "LANGUAGE": "Idioma",
+
+  "FEATURES": {
+      "TITLE": "Nuestras Ventajas",
+      "FEATURE1": {
+        "TITLE": "Ubicación céntrica",
+        "DESCRIPTION": "Disfruta de la comodidad de estar cerca de transporte público, tiendas, y restaurantes."
+      },
+      "FEATURE2": {
+        "TITLE": "Habitaciones completamente amuebladas",
+        "DESCRIPTION": "Ofrecemos habitaciones listas para habitar, con todos los muebles y servicios incluidos."
+      },
+      "FEATURE3": {
+        "TITLE": "Ambiente tranquilo y seguro",
+        "DESCRIPTION": "Nuestra prioridad es brindarte un entorno seguro y relajante donde puedas sentirte como en casa."
+      }
+    },
+    "ABOUT": {
+      "TITLE": "Sobre Nosotros",
+      "DESCRIPTION": "Nos especializamos en ofrecer habitaciones para alquiler de corto y largo plazo, ideales para estudiantes, profesionales y viajeros.",
+      "CTA_LEARN_MORE": "Descubre más sobre nuestro servicio"
+    }
+}
