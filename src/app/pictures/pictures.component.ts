@@ -14,9 +14,9 @@ export class PicturesComponent implements OnInit {
 
   ngOnInit(): void {
     const imagePaths = [
-      'images/image1.jfif',  // Path to image in Firebase Storage
-      'images/image2.jfif',
-      'images/image3.jfif'
+      'images/carousel/image1.png',  // Path to image in Firebase Storage
+      'images/carousel/image2.png',
+      'images/carousel/image3.png'
     ];
 
     imagePaths.forEach(path => {

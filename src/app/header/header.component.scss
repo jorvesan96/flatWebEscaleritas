@@ -1,0 +1,37 @@
+/* Ajusta el espacio entre los elementos del menú y el selector de idioma */
+.navbar-nav {
+  display: flex;
+  gap: 2rem; /* Espacio entre los elementos del menú */
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+/* Alinea el selector de idioma a la derecha */
+.form-inline {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Empuja el formulario hacia el borde derecho */
+  margin-right: 1rem;
+}
+
+/* Ajusta el tamaño y la posición de la bandera */
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  object-fit: contain;
+  margin-right: 1rem; /* Espacio mayor entre la bandera y el selector de idioma */
+}
+
+/* Ajusta el margen entre el texto "Language:" y la bandera */
+.form-inline label {
+  margin-right: 0.5rem; /* Ajusta este valor para separar el texto "Language:" de la bandera */
+}
+
+/* Estilo adicional para alinear la barra de navegación y el selector de idioma */
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinea verticalmente los elementos */
+  width: 100%;
+}
+

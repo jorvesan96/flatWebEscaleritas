@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-header',
@@ -6,16 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  languages = ['English', 'Spanish'];
-  selectedLanguage = 'English';
+  constructor(public translationService: TranslationService) {}
 
-  changeLanguage(event: Event): void {
-    const target = event.target as HTMLSelectElement | null;
-
+  changeLanguage(event: Event) {
+    const target = event.target as HTMLSelectElement; // Cast para evitar errores de tipo
     if (target) {
-      const selectedLanguage = target.value;
-      console.log('Selected language:', selectedLanguage);
-      // Lógica para cambiar el idioma
+      const lang = target.value;
+      this.translationService.changeLanguage(lang); // Llama al servicio para cambiar el idioma
     }
   }
 }

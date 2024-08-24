@@ -1,10 +1,17 @@
 <div>
-  <h1>Rooms Page</h1>
-  <p>Information about rooms.</p>
+  <h1>{{ 'ROOMS.TITLE' | translate }}</h1>
+  <p>{{ 'ROOMS.DESCRIPTION' | translate }}</p>
 
-  <div *ngFor="let room of rooms">
-    <h2>{{ room.name }}</h2>
-    <p>Status: {{ room.status }}</p>
-    <p>Available Until: {{ room.availableUntil?.toDate() | date }}</p>
+  <div *ngIf="rooms.length > 0; else noRooms">
+    <div *ngFor="let room of rooms">
+      <h2>{{ room.name }}</h2>
+      <p>Status: {{ room.status }}</p>
+      <p>Available Since: {{ room.availableSince?.toDate() | date }}</p>
+      <img *ngIf="room.imagePath" [src]="room.imagePath" alt="{{ room.name }}" style="width: 100%; max-width: 300px; margin-top: 10px;">
+    </div>
   </div>
+
+  <ng-template #noRooms>
+    <p>{{ 'ROOMS.NO_ROOMS' | translate }}</p>
+  </ng-template>
 </div>

@@ -1,0 +1,39 @@
+{
+  "HOME": {
+    "TITLE": "Home",
+    "DESCRIPTION": "Welcome to the home page!"
+  },
+  "ROOMS": {
+    "TITLE": "Rooms",
+    "DESCRIPTION": "Information about rooms."
+  },
+  "PICTURES": {
+    "TITLE": "Pictures",
+    "DESCRIPTION": "House pictures."
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "Contact information."
+  },
+  "LANGUAGE": "Language",
+  "FEATURES": {
+    "TITLE": "Our Features",
+    "FEATURE1": {
+      "TITLE": "Feature 1",
+      "DESCRIPTION": "Description of Feature 1."
+    },
+    "FEATURE2": {
+      "TITLE": "Feature 2",
+      "DESCRIPTION": "Description of Feature 2."
+    },
+    "FEATURE3": {
+      "TITLE": "Feature 3",
+      "DESCRIPTION": "Description of Feature 3."
+    }
+  },
+  "ABOUT": {
+    "TITLE": "About Us",
+    "DESCRIPTION": "Learn more about what we do and our mission.",
+    "CTA_LEARN_MORE": "Learn More"
+  }
+}

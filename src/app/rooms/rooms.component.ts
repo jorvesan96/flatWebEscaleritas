@@ -4,7 +4,7 @@ import { RoomService } from '../services/room.service';
 @Component({
   selector: 'app-rooms',
   templateUrl: './rooms.component.html',
-  styleUrls: ['./rooms.component.css'],
+  styleUrls: ['./rooms.component.scss'],
 })
 export class RoomsComponent implements OnInit {
   rooms: any[] = [];
@@ -12,9 +12,14 @@ export class RoomsComponent implements OnInit {
   constructor(private roomService: RoomService) {}
 
   ngOnInit(): void {
-    // Suscríbete a los datos de las habitaciones
-    this.roomService.getRooms().subscribe((data) => {
-      this.rooms = data;
-    });
+    this.roomService.getRooms().subscribe(
+      (data) => {
+        console.log(data); // Verifica los datos en la consola
+        this.rooms = data;
+      },
+      (error) => {
+        console.error('Error fetching rooms:', error); // Manejo de errores
+      }
+    );
   }
 }

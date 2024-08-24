@@ -10,6 +10,6 @@ export class RoomService {
 
   // Obtén los datos de las habitaciones desde Firestore
   getRooms(): Observable<any[]> {
-    return this.firestore.collection('rooms').valueChanges();
+    return this.firestore.collection('Rooms').valueChanges();
   }
 }
